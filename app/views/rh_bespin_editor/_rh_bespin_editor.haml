@@ -1,0 +1,31 @@
+= stylesheet_link_tag "/plugins/rh_bespin_editor/BespinEmbedded-DropIn-0.7.1/BespinEmbedded.compressed.css"
+= javascript_include_tag "/plugins/rh_bespin_editor/BespinEmbedded-DropIn-0.7.1/BespinEmbedded.compressed.js"
+
+
+%script
+  
+  $(function(){
+  $(".code_editor").after("<div class='code_editor_container'></div>");
+  $(".code_editor_container").css({width:$(".code_editor").width(), height:$(".code_editor").height()});
+  $(".code_editor").hide();
+  
+  window.onBespinLoad = function() {
+
+  var embed = tiki.require("embedded"); 
+  var node = $(".code_editor_container").get(0);
+  
+  var bespin = embed.useBespin(node);
+
+  
+  bespin.setSyntax("html");
+  bespin.setSetting("tabstop", "2")
+  bespin.setSetting("stealFocus", "true");
+  bespin.setSetting("initialContent", $(".code_editor").html());
+
+  
+  //bespin.setSetting("content", $(".code_editor").val());
+  //bespin.onchange(function(){ $(".code_editor").val(bespin.getContent()); });
+  
+  }
+  
+  })
