@@ -1,1 +1,1 @@
-require 'rh_bespin_editor'
+require 'ftcodeeditor_bespin'

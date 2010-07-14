@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RhBespinEditorTest < ActiveSupport::TestCase
+class FTCodeEditor_BespinTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   test "the truth" do
     assert true

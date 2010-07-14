@@ -1,0 +1,8 @@
+filename:           FTCodeEditor_Bespin
+title:              "FTCodeEditor: Bespin"
+version:            1.0
+description:        a Bespin text editor for Finethread code areas
+authors:            ['Nikolai Warner']
+min_ft_version:     0.3.0
+homepage:           'http://fineslacks.com'
+update_url:         ''

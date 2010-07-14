@@ -1,15 +1,12 @@
-RhBespinEditor
+FTCodeEditor: Bespin
 ==============
 
-A bespin editor for RH code editor areas. 
-
-Caution: This is quite unstable as bespin embedded is (as of april 2010) quite unstable. But stay tuned for nicer things to come.
-
+A bespin editor for Finethread code editor areas. 
 
 Install:
 
-script/plugin install git://github.com/nikolaiwarner/rh_bespin_editor.git
-rake rh_bespin_editor:install
+script/plugin install git://github.com/nikolaiwarner/FTCodeEditor_Bespin.git
+rake ftcodeeditor_bespin:install
 
 
 
