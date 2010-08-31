@@ -5,12 +5,14 @@ namespace :ft do
       desc 'runs after downloading plugin'
       task :post_install do
       
+        Rake::Task["ftcodeeditor_bespin:install"].invoke  
+      
       end
 
       desc 'runs prior to restart after enabling'
       task :post_enable do
       
-        Rake::Task["ftcodeeditor_bespin:install"].invoke      
+            
 
       end
 
